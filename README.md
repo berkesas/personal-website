@@ -7,8 +7,8 @@ Repo for my personal website. If you want to create your own website fast, you c
 ## Tech used
 
 - Angular - pre-rendering, no SSR
-- Manually edited markdown files
-- Marked.js markdown parser
+- Tailwind
+- Marked.js, Prism.js
 
 ## Current features
 
