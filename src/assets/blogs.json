@@ -1,0 +1,20 @@
+[
+    {
+        "id": "1",
+        "slug": "why-you-should-learn-programming",
+        "created": "2024-06-07T23:50:21.817Z",
+        "updated": "2024-06-07T23:50:21.817Z",
+        "title": "Why you should learn programming?",
+        "link": "",
+        "content": "In this blog, I present several reasons how programming can be useful in the long-term in your life regardless of your skill level"
+    },
+    {
+        "id": "2",
+        "slug": "using-coursera-for-learning-software-development",
+        "created": "2024-05-07T23:50:21.817Z",
+        "updated": "2024-05-07T23:50:21.817Z",
+        "title": "Using Coursera for learning software development",
+        "link": "",
+        "content": "In this blog, I share several tips to improve your learning, based on my own experience of learning on Coursera"
+    }
+]
