@@ -1,0 +1,15 @@
+<address *ngIf="section=='blogs'" class="flex items-center mb-6 not-italic">
+    <div class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white">
+        <img class="mr-4 w-16 h-16 rounded-full" src="/assets/images/photo.jpg"
+            alt="Nazar Mammedov">
+        <div>
+            <a href="#" rel="author" class="text-xl font-bold text-gray-900 dark:text-white">Nazar Mammedov</a>
+            <p class="text-base text-gray-500 dark:text-gray-400">Software Engineer</p>
+        </div>
+    </div>
+</address>
+<markdown ngPreserveWhitespaces [disableSanitizer]="true" src={{page_path}}>
+</markdown>
+
+<!-- <markdown lineNumbers lineHighlight [line]="'1'" clipboard src="/assets/pages/prism.js">
+</markdown> -->

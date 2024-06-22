@@ -10,6 +10,8 @@
 /node_modules
 npm-debug.log
 yarn-error.log
+.env.local
+.env.dev
 
 # IDEs and editors
 .idea/
@@ -36,7 +38,12 @@ yarn-error.log
 /libpeerconnection.log
 testem.log
 /typings
+/src/environments/environment.ts
+/src/environments/environment.staging.ts
 
 # System files
 .DS_Store
 Thumbs.db
+
+#personal
+help.txt
