@@ -1,5 +1,7 @@
 /home
 /about
 /projects
-/blog/why-you-should-learn-programming
-/blog/using-coursera-for-learning-software-development
+/blogs
+/blogs/learning-programming-on-your-own
+/blogs/using-coursera-for-learning-software-development
+/blogs/why-you-should-learn-programming

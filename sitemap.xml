@@ -1,27 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+  xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://nazarmammedov.com/home</loc>
-    <lastmod>2024-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://nazarmammedov.com/about</loc>
-    <lastmod>2024-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://nazarmammedov.com/projects</loc>
-    <lastmod>2024-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nazarmammedov.com/blog</loc>
-    <lastmod>2024-06-09</lastmod>
+    <loc>https://nazarmammedov.com/blogs</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://nazarmammedov.com/blog/why-you-should-learn-programming</loc>
-    <lastmod>2024-06-09</lastmod>
+    <loc>https://nazarmammedov.com/blogs/learning-programming-on-your-own</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://nazarmammedov.com/blog/using-coursera-for-learning-software-development</loc>
-    <lastmod>2024-06-09</lastmod>
+    <loc>https://nazarmammedov.com/blogs/using-coursera-for-learning-software-development</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://nazarmammedov.com/blogs/why-you-should-learn-programming</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>

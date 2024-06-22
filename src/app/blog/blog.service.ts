@@ -16,7 +16,6 @@ export class BlogService {
         this.handleError = httpErrorHandler.createHandleError('BlogService');
       }
 
-    /** GET heroes from the server */
     getBlogs(): Observable<Blog[]> {
         return this.http.get<Blog[]>(this.blogUrl)
             .pipe(
