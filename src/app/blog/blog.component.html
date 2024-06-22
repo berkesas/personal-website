@@ -1,0 +1,23 @@
+<h3
+  class="text-2xl md:text-3xl lg:text-3xl mb-4 font-extrabold leading-none tracking-tight text-gray-900 dark:text-white">
+  Blogs</h3>
+<ng-template [ngIf]="loading">
+  LOADING ..
+</ng-template>
+<ul class="flex flex-wrap gap-2">
+  <li *ngFor="let blog of blogs">
+    <div
+      class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 min-h-40">
+      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ blog.title }}</h5>
+      <p class="font-normal text-gray-700 dark:text-gray-400">{{blog.content}}
+      </p>
+      <p class="mt-2 text-base text-gray-500 dark:text-gray-400">
+        <app-time [data]="blog.created" />
+      </p>
+      <a role="button" [routerLink]="['/blog', blog.slug]"
+        class="inline-block mt-2 items-center justify-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800">
+        Read
+      </a>
+    </div>
+  </li>
+</ul>
