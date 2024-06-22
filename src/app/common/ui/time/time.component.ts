@@ -8,10 +8,10 @@ import { Component, Input, SimpleChanges } from '@angular/core';
   styleUrl: './time.component.css'
 })
 export class TimeComponent {
-  @Input() data!: string;
+  @Input() data!: string | undefined;
   time!: Date | null;
 
   ngOnInit(): void {
-    this.time = new Date(this.data);
+    this.time = this.data == undefined ? new Date() : new Date(this.data);
   }
 }

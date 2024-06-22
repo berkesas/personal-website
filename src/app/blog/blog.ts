@@ -1,9 +1,11 @@
 export interface Blog {
-    id: string;
+    id: number;
     slug: string;
     created: string;
     updated: string;
     title: string;
     link: string;
-    content: string;
+    description: string;
+    words: string;
+    tags: string;
 }

@@ -28,7 +28,7 @@ export const routes: Routes = [
         component: PageComponent
     },
     {
-        title: 'Nazar Mammedov\'s website',
+        title: 'Nazar Mammedov',
         matcher: (url) => {
             if (url.length === 1 && url[0].path.match(/^[\w]+$/gm)) {
                 // console.log('matching pages',url.length);

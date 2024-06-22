@@ -21,9 +21,11 @@ import { TimeComponent } from '../common/ui/time/time.component';
 })
 export class BlogComponent {
   blogs: Blog[] = [];
+  filteredBlogs: Blog[] = [];
   loading = true;
 
-  constructor(private blogService: BlogService, private router: Router) { }
+  constructor(private blogService: BlogService, private router: Router) {
+  }
 
   ngOnInit() {
     this.getBlogs();
@@ -31,10 +33,21 @@ export class BlogComponent {
 
   getBlogs(): void {
     this.blogService.getBlogs()
-      .subscribe(blogs => { (this.blogs = blogs); this.loading = false; })
+      .subscribe(blogs => { this.blogs = blogs; this.filteredBlogs = blogs; this.loading = false; })
   }
 
-  // navigate(route: string) {
-  //   this.router.navigate([route]);
-  // }
+  filterBlogs(text: string) {
+    if (!text) {
+      this.filteredBlogs = this.blogs;
+      return;
+    }
+    this.filteredBlogs = this.blogs.filter((blog) =>
+      blog?.words.includes(text.toLowerCase()),
+    );
+  }
+
+  onFilterChange(event: any): void {
+    const filter = event.target.value;
+    this.filterBlogs(filter);
+  }
 }
