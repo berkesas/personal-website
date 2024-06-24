@@ -24,7 +24,11 @@ Repo for my personal website. If you want to create your own website fast, you c
 - Filter blogs by tags
 - Remove hardcoded data to .env files
 
-## Strategic goal
+## Goal
+
+Create a personal website framework for developers that's easy to update and not connected to outside things. The database will remain flat-file based and Markdown format.
+
+## Quality
 
 - Clean code
 - Modularity
