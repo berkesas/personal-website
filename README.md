@@ -32,3 +32,4 @@ Create a personal website framework for developers that's easy to update and not
 
 - Clean code
 - Modularity
+- Tested
