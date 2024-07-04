@@ -1,7 +1,6 @@
-### About me
+### About
 
-<img src="/assets/images/photo.jpg" alt="Nazar's photo" height="200" style="border: 0px; border-radius: 10px; float:right; padding:0em 1em 0em 1em; height: 200px;">
- Nazar Mammedov is a software engineer specializing in web-based and cloud-delivered technologies. His passion is crafting seamless user experiences with React, Angular, Electron and engineering backend systems with Django, Symfony, and .NET. He is pursuing his master's degree in Informatics at Northeastern University. 
+ Nazar Mammedov is a software engineer specializing in web-based and cloud-delivered technologies. His passion is crafting seamless user experiences with React, Angular, Electron and engineering backend systems with Django, Symfony, and .NET. He is pursuing his master's degree in Informatics at Northeastern University in Boston. 
 
 #### Education
 
@@ -9,7 +8,17 @@
 - Masters - Northeastern University (expected 2026)
 - PhD - Brown University
 
-#### Coding Skills
+#### Certifications
+
+<img src="/assets/images/aws-cloud-practitioner.png" alt="AWS Certified Cloud Practitioner" style="display:inline-block;padding:1em 0em 0em 0em; height: 130px;">
+<img src="/assets/images/aws-cloud-quest.png" alt="AWS Cloud Quest Practitioner" style="display:inline-block;padding:1em 0em 0em 0em; height: 130px;">
+<img src="/assets/images/meta-full-stack-engineer.png" alt="Meta Full-stack software engineer" style="display:inline-block;padding:1em 0em 0em 0em; height: 130px;">
+<img src="/assets/images/meta-back-end-developer.png" alt="Meta Back-end Developer" style="display:inline-block;padding:1em 0em 0em 0em; height: 130px;">
+<img src="/assets/images/meta-front-end-developer.png" alt="Meta Front-end Developer" style="display:inline-block;padding:1em 0em 0em 0em; height: 130px;">
+
+[My profile](https://www.credly.com/users/nazar-mammedov.00c01476/badges) at Credly
+
+#### Languages
 
 - Programming languages: Javascript, Python, PHP, VBA, C#, AutoIt, C++
 - Database: SQL 

@@ -5,7 +5,7 @@ export function markedOptionsFactory(): MarkedOptions {
     const renderer = new MarkedRenderer();
 
     renderer.blockquote = (text: string) => {
-        return '<blockquote class="blockquote"><p>' + text + '</p></blockquote>';
+        return "<blockquote class='text-xl italic font-semibold text-gray-900 dark:text-white'><p>" + text + "</p></blockquote>";
     };
 
     renderer.paragraph = (text: string) => {
@@ -16,11 +16,11 @@ export function markedOptionsFactory(): MarkedOptions {
         const escapedText = text.toLowerCase().replace(/[^\w]+/g, '-');
         var size = 'text-xl';
         switch (level) {
-            case 1: size = 'text-4xl md:text-5xl lg:text-5xl'; break;
-            case 2: size = 'text-3xl md:text-4xl lg:text-4xl'; break;
-            case 3: size = 'text-2xl md:text-3xl lg:text-3xl'; break;
-            case 4: size = 'text-1xl md:text-2xl lg:text-2xl'; break;
-            case 5: size = 'text-xl md:text-1xl lg:text-1xl'; break;
+            case 1: size = 'text-3xl md:text-4xl lg:text-4xl'; break;
+            case 2: size = 'text-2xl md:text-3xl lg:text-3xl'; break;
+            case 3: size = 'text-xl md:text-2xl lg:text-2xl'; break;
+            case 4: size = 'text-xl md:text-xl lg:text-xl'; break;
+            case 5: size = 'text-xl md:text-xl lg:text-xl'; break;
             default: size = 'text-xl';
         }
         return '<h' + level + ' class=\'py-1 ' + size + '  dark:text-white font-bold leading-none tracking-tight text-gray-700\'>' +

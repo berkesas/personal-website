@@ -2,7 +2,7 @@
 title: Why you should learn programming?
 created: 2024-06-08T23:50:21.817Z
 updated: 2024-06-22T23:50:21.817Z
-tags: big learn good
+tags: programming learn career
 content: In this blog, I present several reasons how programming can be useful in the long-term in your life regardless of your skill level
 -- META end -->
 

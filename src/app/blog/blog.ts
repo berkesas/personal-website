@@ -8,4 +8,5 @@ export interface Blog {
     description: string;
     words: string;
     tags: string;
+    length: number;
 }

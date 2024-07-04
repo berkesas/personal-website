@@ -1,4 +1,4 @@
-import { ApplicationConfig, importProvidersFrom } from '@angular/core';
+import { APP_INITIALIZER, ApplicationConfig, Provider, importProvidersFrom, inject } from '@angular/core';
 import { provideRouter, withComponentInputBinding } from '@angular/router';
 import { MARKED_OPTIONS, CLIPBOARD_OPTIONS, ClipboardButtonComponent, provideMarkdown } from 'ngx-markdown';
 import { markedOptionsFactory } from './marked-options-factory';
@@ -9,6 +9,18 @@ import { routes } from './app.routes';
 import { provideClientHydration } from '@angular/platform-browser';
 import { HttpErrorHandler } from './http-error-handler.service';
 import { MessageService } from './message.service';
+import { ConfigService } from './config/config.service';
+
+export function provideConfigInitializer(): Provider {
+  return {
+    provide: APP_INITIALIZER,
+    multi: true,
+    useFactory: () => {
+      const configService = inject(ConfigService);
+      return () => configService.load();
+    }
+  }
+}
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -32,6 +44,7 @@ export const appConfig: ApplicationConfig = {
           buttonComponent: ClipboardButtonComponent,
         },
       },
-    })
+    }),
+    provideConfigInitializer()
   ]
 };
