@@ -2,11 +2,11 @@
     <div class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white">
         <img class="mr-4 w-16 h-16 rounded-full" src="/assets/images/photo.jpg" alt="Nazar Mammedov">
         <div>
-            <a href="#" rel="author" class="text-xl font-bold text-gray-900 dark:text-white">Nazar Mammedov</a>
-            <p class="text-base text-gray-500 dark:text-gray-400">Software Engineer</p>
+            <a href="#" rel="author"
+                class="text-xl font-bold text-gray-900 dark:text-white">{{this.appConfig.config?.author}}</a>
+            <p class="text-base text-gray-500 dark:text-gray-400">{{this.appConfig.config?.position}}</p>
         </div>
     </div>
-
 </div>
 <div *ngIf="section=='blogs'" class="items-center mb-6 not-italic">
     <h1
@@ -17,12 +17,23 @@
     </h1>
     <div class="flex mt-2 gap-2 text-base text-gray-500 dark:text-gray-400">
         <div>
-            created: <app-time [data]="blog?.created" class="ml-2" />
+            {{blog?.length | readingTime }} min read
         </div>
+        <div> | </div>
         <div>
-            updated: <app-time [data]="blog?.updated" class="ml-2" />
+            <app-time [data]="blog?.updated" class="ml-2" />
         </div>
     </div>
 </div>
 <markdown ngPreserveWhitespaces [disableSanitizer]="true" src={{page_path}}>
 </markdown>
+<div *ngIf="section=='blogs'" class="flex items-center mt-3 mb-6 not-italic">
+    <ul class="flex flex-wrap gap-2">
+        <li *ngFor="let tag of this.tags">
+            <span
+                class="bg-gray-100 text-gray-800 font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-300">
+                #{{tag}}
+            </span>
+        </li>
+    </ul>
+</div>

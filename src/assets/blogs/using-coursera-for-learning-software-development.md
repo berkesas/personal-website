@@ -2,7 +2,7 @@
 title: Using Coursera for learning software development
 created: 2024-06-07T23:50:21.817Z
 updated: 2024-06-22T23:50:21.817Z
-tags: big learn good
+tags: coursera learn software
 content: In this blog, I share several tips to improve your learning, based on my own experience of learning on Coursera
 -- META end -->
 

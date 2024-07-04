@@ -3,6 +3,7 @@ const path = require('path');
 const nlp = require('compromise');
 const { SitemapStream, streamToPromise } = require('sitemap');
 const { Readable } = require('stream');
+const { text } = require('stream/consumers');
 
 // Define the path for the index file
 const srcDir = "./src/assets/blogs";
@@ -20,6 +21,7 @@ const blogs = [];
         console.log("processing", file);
         const textContent = fs.readFileSync(fullPath).toString();
         const lines = textContent.split('\r\n');
+        const wordsList = getTotalWords(textContent);
 
         const blog = {
           id: id,
@@ -29,8 +31,9 @@ const blogs = [];
           updated: getAfterSpace(lines[3]),
           tags: getAfterSpace(lines[4]),
           description: getAfterSpace(lines[5]),
-          words: getUniqueWords(textContent),
+          words: getUniqueWords(wordsList),
           link: "",
+          length: wordsList.length
         };
 
         blogs.push(blog);
@@ -100,16 +103,23 @@ function writeSitemap() {
     });
 }
 
-function getUniqueWords(fileContent) {
-  let cleanText = fileContent.replace(/<[^>]*>/g, '');
+function getUniqueWords(totalWords) {
+  // Filter out duplicates and return the unique words
+  const uniqueWords = [...new Set(totalWords)];
+  return uniqueWords.join(' ');
+}
+
+function stripTags(text) {
+  let cleanText = text.replace(/<[^>]*>/g, '');
   cleanText = cleanText.replace(/<!--.*?-->/gs, '');
   cleanText = cleanText.replace(/\(http.*?\)/gs, '');
   cleanText = cleanText.replace(/[^0-9a-zA-Z\s+]/g, '');
-  cleanText = cleanText.replace(/[^0-9a-zA-Z\s+]/g, '').replace(/_/g, '').toLowerCase();
-  let doc = nlp(cleanText);
+  cleanText = cleanText.replace(/_/g, '').toLowerCase();
+  return cleanText;
+}
+
+function getTotalWords(fileContent) {
+  let doc = nlp(stripTags(fileContent));
   doc = doc.remove('#Preposition #Determiner #Conjunction #Pronoun');
-  const words = doc.text().split(/\s+/);
-  // Filter out duplicates and return the unique words
-  const uniqueWords = [...new Set(words)];
-  return uniqueWords.join(' ');
+  return doc.text().split(/\s+/);
 }

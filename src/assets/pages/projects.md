@@ -8,4 +8,15 @@
 
 ### Sample works
 
-To be added soon
+#### IT Proposal Development
+
+These samples demonstrate my skills in Information System Design, IT proposal development, writing, drawing, designing and delivering quality documents.
+
+- [Digital Transformation Proposal](/assets/files/digital_transformation_proposal.pdf) 
+
+#### Presentations
+
+These samples demonstrate my skills in preparing quality presentations.
+
+- [Enterprise Resource Planning](/assets/files/erp_presentation.pdf)
+- [Concurrency Control](/assets/files/concurrency_control_presentation.pdf)

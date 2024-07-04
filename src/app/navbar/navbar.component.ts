@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet, Router } from '@angular/router';
-
+import { ConfigService } from '../config/config.service';
 
 @Component({
   selector: 'app-navbar',
@@ -12,7 +12,7 @@ import { RouterLink, RouterLinkActive, RouterOutlet, Router } from '@angular/rou
 })
 export class NavbarComponent {
 
-  constructor(private router: Router) { }
+  constructor(readonly appConfig: ConfigService, private router: Router) { }
 
   navigate(link: string) {
     this.router.navigate([link]);
