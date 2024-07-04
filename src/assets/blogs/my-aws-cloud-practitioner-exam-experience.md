@@ -81,7 +81,7 @@ The following knowledge areas are covered in the exam:
 - Core AWS services
 - Economics of the AWS Cloud
 
-One big theme in the exam is "migrating to AWS cloud." There are many questions about the benefits of cloud computing and migrating to the cloud. At times, it can feel like an AWS Cloud commercial. But hey, we live in a market society, so I found it perfectly tolerable.
+One big theme in the exam is "migrating to AWS cloud." There are many questions about the benefits of cloud computing and migrating to the cloud. At times, it can feel like this is more about economics than cloud technology. But hey, we live in a market society. It's important to put everything in sound economic foundations. Understanding the economic motivation for moving to the cloud is as important as understanding the technical steps for the migration.
 
 On the flip side, I learned a lot about system design and software architecture concepts that apply beyond the AWS domain. If I were to switch to Azure or GCP, I expect it would be easy for me to understand their systems. I’d just need to learn the specific terms they use for the same cloud computing concepts.
 
@@ -115,7 +115,9 @@ The best way to remember the meanings of these similar-sounding names might be t
 
 ## The exam experience itself
 
-You have the option to take the exam at home, but I opted to test at a Pearson Vue testing center. Depending on your circumstances, this decision can be significant. You need a quiet environment to concentrate on answering the questions. While an official test center doesn't guarantee absolute quiet, it's a consideration. You never know the actual conditions at the exam venue — whether the windows provide sound isolation or if there's nearby construction on the day of your test. This aspect didn't affect my experience this time, but I can see how it might make it difficult to read and focus on the questions.
+You have the option to take the exam at home, but I opted to test at a Pearson Vue testing center. I was not sure if it was Celsius or Fahrenheit but it was a hot Boston summer day. I took the commuter rail and the red line. I reached the test center 20 minutes before the test. I had a good chat with the test site administrator about cloud technology. Everything worked well for me.
+
+Depending on your circumstances, deciding where to take the exam can be significant. You need a quiet environment to concentrate on answering the questions. While an official test center doesn't guarantee absolute quiet, it's a consideration. You never know the actual conditions at the exam venue — whether the windows provide sound isolation or if there's nearby construction on the day of your test. This aspect didn't affect my experience this time, but I can see how it might make it difficult to read and focus on the questions.
 
 ## Key takeaways
 
