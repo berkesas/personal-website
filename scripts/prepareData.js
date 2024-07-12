@@ -4,6 +4,7 @@ const nlp = require('compromise');
 const { SitemapStream, streamToPromise } = require('sitemap');
 const { Readable } = require('stream');
 const { text } = require('stream/consumers');
+import configData from './assets/config.json' assert { type: 'json' };
 
 // Define the path for the index file
 const srcDir = "./src/assets/blogs";

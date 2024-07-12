@@ -47,5 +47,5 @@ Thumbs.db
 
 #personal
 help.txt
-/assets/files/*
-/assets/blogs/*
+src/assets/files/*
+src/assets/blogs/*
