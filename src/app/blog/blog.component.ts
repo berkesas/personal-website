@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { MarkdownComponent } from 'ngx-markdown';
 import { CommonModule } from '@angular/common';
 import { Blog } from './blog';
-import { BlogService } from './blog.service';
+import { BlogService } from '../services/blog.service';
 import { RouterLink, RouterLinkActive, RouterOutlet, Router } from '@angular/router';
 import { TimeComponent } from '../common/ui/time/time.component';
 

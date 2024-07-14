@@ -6,9 +6,9 @@ import { CommonModule } from '@angular/common';
 import data from '../../assets/blogs.json';
 import { Blog } from '../blog/blog';
 import { TimeComponent } from '../common/ui/time/time.component';
-import { ConfigService } from '../config/config.service';
-
+import { ConfigService } from '../services/config.service';
 import { Pipe, PipeTransform } from '@angular/core';
+
 @Pipe({
   name: 'readingTime',
   standalone: true,

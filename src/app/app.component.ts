@@ -7,6 +7,7 @@ import { MarkdownComponent } from 'ngx-markdown';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { BlogComponent } from './blog/blog.component';
+import { ChatboxComponent } from './chatbox/chatbox.component';
 
 declare const gtag: Function;
 
@@ -18,6 +19,7 @@ declare const gtag: Function;
     NavbarComponent,
     FooterComponent,
     BlogComponent,
+    ChatboxComponent,
     MarkdownComponent,
     RouterLink,
     RouterModule,

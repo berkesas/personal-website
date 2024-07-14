@@ -7,9 +7,10 @@ import { HttpClientJsonpModule, HttpClientModule, provideHttpClient, withFetch }
 import { HttpClient } from '@angular/common/http';
 import { routes } from './app.routes';
 import { provideClientHydration } from '@angular/platform-browser';
-import { HttpErrorHandler } from './http-error-handler.service';
-import { MessageService } from './message.service';
-import { ConfigService } from './config/config.service';
+import { HttpErrorHandler } from './services/http-error-handler.service';
+import { MessageService } from './services/message.service';
+import { ConfigService } from './services/config.service';
+import { provideAnimations } from '@angular/platform-browser/animations';
 
 export function provideConfigInitializer(): Provider {
   return {
@@ -24,6 +25,7 @@ export function provideConfigInitializer(): Provider {
 
 export const appConfig: ApplicationConfig = {
   providers: [
+    provideAnimations(),
     importProvidersFrom(HttpClientModule),
     importProvidersFrom(HttpClientJsonpModule),
     HttpErrorHandler,
