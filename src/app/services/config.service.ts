@@ -1,15 +1,8 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { BehaviorSubject, Observable } from "rxjs";
-import { of, tap, map } from 'rxjs';
-
-export interface Config {
-    title: string;
-    author: string;
-    position: string;
-    linkedin: string,
-    git: string;
-}
+import { Config } from "../common/types/config";
+import { tap } from 'rxjs';
 
 interface ConfigState {
     isLoaded: boolean;
