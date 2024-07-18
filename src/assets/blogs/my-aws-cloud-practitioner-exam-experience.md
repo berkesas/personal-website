@@ -4,7 +4,7 @@ created: 2024-07-03T22:50:21.817Z
 updated: 2024-07-03T22:50:21.817Z
 tags: cloud aws certification
 content: Recently I prepared for AWS Certified Cloud Practioner exam and passed it. Here are my lessons learned.
--- META end -->
+-- META end --->
 
 ## Introduction
 

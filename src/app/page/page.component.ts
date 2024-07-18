@@ -4,7 +4,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { RouterLinkActive } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import data from '../../assets/blogs.json';
-import { Blog } from '../blog/blog';
+import { Blog } from '../common/types/blog';
 import { TimeComponent } from '../common/ui/time/time.component';
 import { ConfigService } from '../services/config.service';
 import { Pipe, PipeTransform } from '@angular/core';
