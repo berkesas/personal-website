@@ -2,7 +2,7 @@
 /about
 /projects
 /blogs
-/blogs/learning-programming-on-your-own
 /blogs/my-aws-cloud-practitioner-exam-experience
-/blogs/using-coursera-for-learning-software-development
 /blogs/why-you-should-learn-programming
+/blogs/using-coursera-for-learning-software-development
+/blogs/learning-programming-on-your-own

@@ -15,8 +15,22 @@ const blogs = [];
   try {
     console.log("Initiating data preparation..");
     const files = await fs.promises.readdir(srcDir);
+    // Get stats for each file
+    const filesWithStats = await Promise.all(
+      files.map(async (file) => {
+        const filePath = path.join(srcDir, file);
+        const stats = await fs.promises.stat(filePath);
+        return { name: file, time: stats.mtime.getTime() };
+      })
+    );
+
+    // Sort files by creation time
+    filesWithStats.sort((a, b) => b.time - a.time);
+
+    const sortedFiles = filesWithStats.map(file => file.name);
+
     let id = 1;
-    for (const file of files) {
+    for (const file of sortedFiles) {
       const fullPath = path.join(srcDir, file);
       const stat = await fs.promises.stat(fullPath);
       if (stat.isFile() && file.endsWith(".md")) {
@@ -97,7 +111,7 @@ function writeSitemap() {
     links.push(link);
   });
 
-  const sitemapStream = new SitemapStream({ hostname: configData.hostname });
+  const sitemapStream = new SitemapStream({ hostname: configData.websiteAddress });
   const xmlStream = streamToPromise(Readable.from(links).pipe(sitemapStream));
   console.log('Writing sitemap', file);
   xmlStream

@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { MarkdownComponent } from 'ngx-markdown';
 import { CommonModule } from '@angular/common';
-import { Blog } from './blog';
-import { BlogService } from './blog.service';
+import { Blog } from '../common/types/blog';
+import { BlogService } from '../services/blog.service';
 import { RouterLink, RouterLinkActive, RouterOutlet, Router } from '@angular/router';
 import { TimeComponent } from '../common/ui/time/time.component';
 
@@ -17,15 +17,14 @@ import { TimeComponent } from '../common/ui/time/time.component';
     TimeComponent],
   templateUrl: './blog.component.html',
   styleUrl: './blog.component.css',
-  providers: [BlogService],
+  // providers: [BlogService],
 })
 export class BlogComponent {
   blogs: Blog[] = [];
   filteredBlogs: Blog[] = [];
   loading = true;
 
-  constructor(private blogService: BlogService, private router: Router) {
-  }
+  constructor(private blogService: BlogService, private router: Router) {}
 
   ngOnInit() {
     this.getBlogs();
