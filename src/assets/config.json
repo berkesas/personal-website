@@ -1,9 +1,14 @@
 {
     "title": "Nazar Mammedov",
     "author": "Nazar Mammedov",
+    "authorFirstName": "Nazar",
+    "authorLastName": "Mammedov",
     "position": "Software Engineer",
     "linkedin": "https://www.linkedin.com/in/nazar-mammedov/",
     "git": "https://github.com/berkesas",
-    "hostname": "https://nazarmammedov.com/",
-    "blogSourceDirectory": "./src/assets/blogs"
+    "websiteAddress": "https://nazarmammedov.com/",
+    "blogSourceDirectory": "./src/assets/blogs",
+    "blogDataSource": "/assets/blogs.json",
+    "chatBotService": "https://api.nazarmammedov.com/api/chatbot",
+    "enableChat": true
 }

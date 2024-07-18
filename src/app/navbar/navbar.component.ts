@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet, Router } from '@angular/router';
-import { ConfigService } from '../config/config.service';
+import { ConfigService } from '../services/config.service';
 
 @Component({
   selector: 'app-navbar',
