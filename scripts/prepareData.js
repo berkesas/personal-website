@@ -87,8 +87,8 @@ function writeBlogs() {
 function writeRoutes() {
   file = './routes.txt';
   const routes = [];
-  routes.push('/home', '/about', '/projects', '/blogs');
-  blogs.forEach(blog => { routes.push('/blogs/' + blog.slug) });
+  routes.push('/home', '/about', '/projects', '/bloglist');
+  blogs.forEach(blog => { routes.push('/blog/' + blog.slug) });
   console.log("Writing routes..", file);
   fs.writeFile(file, routes.join('\r\n'), "utf8", () => { });
 }
@@ -99,12 +99,12 @@ function writeSitemap() {
     { url: '/home', changefreq: 'monthly', priority: 0.7 },
     { url: '/about', changefreq: 'monthly', priority: 0.5 },
     { url: '/projects', changefreq: 'monthly', priority: 0.7 },
-    { url: '/blogs', changefreq: 'weekly', priority: 1 },
+    { url: '/bloglist', changefreq: 'weekly', priority: 1 },
   ];
 
   blogs.forEach(blog => {
     const link = {
-      url: '/blogs/' + blog.slug,
+      url: '/blog/' + blog.slug,
       changefreq: 'monthly',
       priority: 0.5
     }

@@ -144,6 +144,7 @@ export class ChatboxComponent {
         // console.log(responseMessages);
         this.loading = false;
         this.typing.push(true);
+        responseMessages[0].created = (new Date()).toISOString();
         this.conversationHistory.push(responseMessages[0]);
       })
   }
