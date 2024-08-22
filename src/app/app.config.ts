@@ -29,12 +29,12 @@ export const appConfig: ApplicationConfig = {
     { provide: BlogService },
     provideAnimations(),
     importProvidersFrom(HttpClientModule),
+    provideHttpClient(withFetch()),
     importProvidersFrom(HttpClientJsonpModule),
     HttpErrorHandler,
     MessageService,
     provideRouter(routes, withComponentInputBinding()),
     provideClientHydration(),
-    provideHttpClient(withFetch()),
     provideMarkdown({
       sanitize: SecurityContext.NONE,
       loader: HttpClient,
