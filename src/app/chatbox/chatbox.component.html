@@ -1,6 +1,6 @@
 <!-- Chatbox -->
-<div *ngIf="!chatWindowVisible" style="z-index:1"
-    class="fixed justify-end bottom-4 right-4 overflow-hidden fill-cyan-500">
+<div *ngIf="!chatWindowVisible"
+    class="fixed z-10 justify-end bottom-4 right-4 overflow-hidden fill-cyan-500">
     <div id="chatBubble" class="w-auto h-auto content-start bg-white p-2 border rounded-2xl shadow-lg mt-2 text-sm">
         <p>Hello! How can I help you today?</p>
     </div>
@@ -18,7 +18,7 @@
     </div>
 </div>
 <div [@openClose]="chatWindowVisible ? 'open':'closed'"
-    class="fixed bottom-4 bg-white right-4 w-80 shadow-lg rounded-lg overflow-hidden">
+    class="fixed bg-white bottom-4 right-4 w-80 shadow-lg rounded-lg overflow-hidden">
     <div class="flex justify-between bg-blue-500 text-white p-2">
         <div class="inline-flex items-center">
             <img src="./assets/images/chatbot3.png" width="50">
@@ -87,7 +87,7 @@
     </div>
     <div class="flex p-4 border-t items-start">
         <textarea #chatMessage type="text" placeholder="Ask me something..."
-            class="flex-1 align-text-top p-2 h-20 border border-gray-300 rounded-lg bg-gray-100 text-sm"
+            class="flex-1 align-text-top p-2 h-18 border border-gray-300 rounded-lg bg-gray-100 text-sm"
             (keyup.enter)="sendMessage()"></textarea>
         <button (click)="sendMessage()" class="ml-2">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
