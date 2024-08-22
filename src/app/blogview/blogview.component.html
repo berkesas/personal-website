@@ -1,0 +1,31 @@
+<div class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white">
+    <img class="mr-4 w-16 h-16 rounded-full" src="/assets/images/photo.jpg" alt="{{this.appConfig.config?.author}}">
+    <div>
+        <a href="#" rel="author"
+            class="text-xl font-bold text-gray-900 dark:text-white">{{this.appConfig.config?.author}}</a>
+        <p class="text-base text-gray-500 dark:text-gray-400">{{this.appConfig.config?.position}}</p>
+    </div>
+</div>
+<h1 class="py-1 text-4xl md:text-5xl lg:text-5xl  dark:text-white font-bold leading-none tracking-tight text-gray-700">
+    <a name="using-coursera-for-learning-software-development" class="anchor"
+        href="#using-coursera-for-learning-software-development"><span class="header-link"></span></a>{{blog?.title}}
+</h1>
+<div class="flex mt-2 gap-2 text-base text-gray-500 dark:text-gray-400">
+    <div>
+        {{blog?.length | readingTime }} min read
+    </div>
+    <div> | </div>
+    <div>
+        <app-time [data]="blog?.updated" class="ml-2" />
+    </div>
+</div>
+<markdown ngPreserveWhitespaces [disableSanitizer]="true" src={{path}}>
+</markdown>
+<ul class="flex flex-wrap gap-2">
+    <li *ngFor="let tag of this.tags">
+        <span
+            class="bg-gray-100 text-gray-800 font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-300">
+            #{{tag}}
+        </span>
+    </li>
+</ul>

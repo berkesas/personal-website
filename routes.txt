@@ -1,8 +1,12 @@
 /home
 /about
 /projects
-/blogs
-/blogs/my-aws-cloud-practitioner-exam-experience
-/blogs/why-you-should-learn-programming
-/blogs/using-coursera-for-learning-software-development
-/blogs/learning-programming-on-your-own
+/bloglist
+/blog/how-to-build-chatbot-for-your-website-training-model
+/blog/how-to-build-chatbot-for-your-website-frontent-coding
+/blog/how-to-build-chatbot-for-your-website-frontend-design
+/blog/how-to-build-chatbot-for-your-website-system-design
+/blog/my-aws-cloud-practitioner-exam-experience
+/blog/why-you-should-learn-programming
+/blog/using-coursera-for-learning-software-development
+/blog/learning-programming-on-your-own
