@@ -8,7 +8,7 @@ import { BlogviewComponent } from './blogview/blogview.component';
 export const routes: Routes = [
     {
         path: 'bloglist',
-        title: 'Blog',
+        title: 'Blog posts',
         component: BlogComponent
     },
     {
