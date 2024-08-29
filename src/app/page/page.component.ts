@@ -32,8 +32,8 @@ export class PageComponent {
     if (changes['page'] !== undefined) {
       this.current_page = this._sanitizer.sanitize(SecurityContext.HTML, changes['page'].currentValue);
     }
-    console.log(changes);
-    console.log(this.path);
+    // console.log(changes);
+    // console.log(this.path);
 
     this.path = 'assets/pages/' + this.current_page + '.md';
     // console.log(this.page_path);

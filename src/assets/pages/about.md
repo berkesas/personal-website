@@ -1,12 +1,12 @@
 ### About
 
- Nazar Mammedov is a software engineer specializing in web-based and cloud-delivered technologies. His passion is crafting seamless user experiences with React, Angular, Electron and engineering backend systems with Django, Symfony, and .NET. He is pursuing his master's degree in Informatics at Northeastern University in Boston. 
+ Nazar Mammedov is a software engineer specializing in web-based and cloud-delivered technologies. His passion is crafting seamless user experiences with React, Angular, Electron and engineering backend systems with Django, Symfony, and .NET. He is pursuing his master's degree in Informatics at Northeastern University in Boston.
 
 #### Education
 
-- Bachelors - Middle East Technical University
-- Masters - Northeastern University (expected 2026)
-- PhD - Brown University
+- Bachelors - Middle East Technical University, Ankara, Turkey
+- Masters - Northeastern University (expected 2026), Boston, MA, USA
+- PhD - Brown University, Providence, RI, USA
 
 #### Certifications
 
@@ -16,7 +16,7 @@
 <img src="/assets/images/meta-back-end-developer.png" alt="Meta Back-end Developer" style="display:inline-block;padding:1em 0em 0em 0em; height: 130px;">
 <img src="/assets/images/meta-front-end-developer.png" alt="Meta Front-end Developer" style="display:inline-block;padding:1em 0em 0em 0em; height: 130px;">
 
-[My profile](https://www.credly.com/users/nazar-mammedov.00c01476/badges) at Credly
+Full [Credly](https://www.credly.com/users/nazar-mammedov.00c01476/badges) profile
 
 #### Languages
 
@@ -57,10 +57,9 @@
 - Apache NetBeans
 - Notepad++
 
-#### Design
+#### Graphics editing tools
 
-I do not consider myself a designer but can use the following tools to achieve results.
 - Photoshop
 - InDesign
 - Figma
-- Canva 
+- Canva

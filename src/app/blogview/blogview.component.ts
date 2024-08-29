@@ -8,6 +8,7 @@ import { Blog } from '../common/types/blog';
 import { TimeComponent } from '../common/ui/time/time.component';
 import { ConfigService } from '../services/config.service';
 import { Pipe, PipeTransform } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Pipe({
   name: 'readingTime',
@@ -40,7 +41,7 @@ export class BlogviewComponent {
   tags!: string[];
   path = '';
 
-  constructor(readonly appConfig: ConfigService, private _sanitizer: DomSanitizer) { }
+  constructor(readonly appConfig: ConfigService, private _sanitizer: DomSanitizer,private titleService: Title) { }
 
   ngOnChanges(changes: SimpleChanges) {
     if (changes['slug'] !== undefined) {
@@ -48,6 +49,7 @@ export class BlogviewComponent {
       this.blog = data.find((item) => item.slug == this.slug);
       if (this.blog) {
         this.tags = this.blog.tags.split(' ');
+        this.titleService.setTitle(this.blog.title);
       }
 
       // console.log(data[0].title);
