@@ -15,6 +15,7 @@ Selected software applications that are still functioning or in development.
 These are samples from projects managed by me in my previous positions. They demonstrate my analytical, innovation, leadership, and project management skills.
 
 - [Developing educational robotics in Turkmenistan](/assets/files/robotics-en.pdf) (PDF file) - full cycle from needs-analysis to project delivery.
+- [Developing TTS voice in Turkmen](/assets/files/tts-en.pdf) (PDF file) - Turkmen text-to-speech voice was developed.
 
 #### IT Proposal Development
 
