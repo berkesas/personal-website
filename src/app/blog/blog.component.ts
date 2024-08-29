@@ -5,6 +5,7 @@ import { Blog } from '../common/types/blog';
 import { BlogService } from '../services/blog.service';
 import { RouterLink, RouterLinkActive, RouterOutlet, Router } from '@angular/router';
 import { TimeComponent } from '../common/ui/time/time.component';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-blog',
@@ -24,7 +25,7 @@ export class BlogComponent {
   filteredBlogs: Blog[] = [];
   loading = true;
 
-  constructor(private blogService: BlogService, private router: Router) {}
+  constructor(private blogService: BlogService, private router: Router, private titleService: Title) {}
 
   ngOnInit() {
     this.getBlogs();
