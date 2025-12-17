@@ -1,9 +1,10 @@
 <!-- META begin
-title: Why you should learn programming?
+title: Why should you learn programming?
 created: 2024-06-08T23:50:21.817Z
 updated: 2024-06-22T23:50:21.817Z
 tags: programming learn career
 content: In this blog, I present several reasons how programming can be useful in the long-term in your life regardless of your skill level
+image: /assets/images/blog-default.jpg
 -- META end -->
 
 I've been learning programming since 1994. Here I want to share some tips based on my personal experience. I hope you will be able to avoid some of the mistakes I made and learn from it. In this blog I use coding and programming interchangeably.

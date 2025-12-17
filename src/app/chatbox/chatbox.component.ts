@@ -43,7 +43,7 @@ export class ShortenDatePipe implements PipeTransform {
       state(
         'closed',
         style({
-          height: '500px',
+          height: '20px',
           // width: '0px',
           opacity: 0,
         }),

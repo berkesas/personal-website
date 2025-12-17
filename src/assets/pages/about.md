@@ -1,12 +1,12 @@
 ### About
 
- Nazar Mammedov is a software engineer specializing in web-based and cloud-delivered technologies. His passion is crafting seamless user experiences with React, Angular, Electron and engineering backend systems with Django, Symfony, and .NET. He is pursuing his master's degree in Informatics at Northeastern University in Boston.
+I’m a software engineer with experience across web, desktop, mobile, cloud, and agentic AI development. My core expertise is full-stack software engineering, using technologies such as Bootstrap, Tailwind, React, Next.js, Expo, Angular, Electron, Django, Symfony, Kotlin, Spring Boot, and .NET. I complement this with strong skills in cloud infrastructure, containerization, AI/ML, and data engineering. If you’re looking for an innovative full-stack engineer who thrives on technical challenges, let’s connect.
 
 #### Education
 
-- Bachelors - Middle East Technical University, Ankara, Turkey
-- Masters - Northeastern University (expected 2026), Boston, MA, USA
+- Masters - Northeastern University, Boston, MA, USA
 - PhD - Brown University, Providence, RI, USA
+- Bachelors - Middle East Technical University, Ankara, Turkey
 
 #### Certifications
 
@@ -16,50 +16,32 @@
 <img src="/assets/images/meta-back-end-developer.png" alt="Meta Back-end Developer" style="display:inline-block;padding:1em 0em 0em 0em; height: 130px;">
 <img src="/assets/images/meta-front-end-developer.png" alt="Meta Front-end Developer" style="display:inline-block;padding:1em 0em 0em 0em; height: 130px;">
 
-Full [Credly](https://www.credly.com/users/nazar-mammedov.00c01476/badges) profile
+Full <a href="https://www.credly.com/users/nazar-mammedov.00c01476/badges" target="_blank" rel="noopener noreferrer" style="color:blue;text-decoration:underline;">
+   Credly 
+</a> Profile
 
 #### Languages
 
-- Programming languages: Javascript, Python, PHP, VBA, C#, AutoIt, C++
-- Database: SQL 
+- Programming languages: Javascript, Python, Go, Java, C#, C++, PHP, VBA, AutoIt
+- Database: SQL
 - Web development: HTML, CSS, XML, JSON
 
 #### Frameworks
 
-- Django (Python)
-- Symfony (PHP)
-- NextJS (Javascript, ReactJS)
-- Gatsby (Javascript)
-- Angular (Javascript)
-- .NET Framework (C#)
+Spring Boot (Java), Django, Flask, Quartz, Gradio (Python), Symfony (PHP), Gin (Go), NextJs/React, Angular, Gatsby (Javascript), Jetpack Compose Multiplatform (Kotlin), .NET Framework (C#)
 
 #### Database
 
-- MySQL
-- PostgreSQL
-- SQLite
-- Microsoft Access
-- Microsoft SQL Server
-- MongoDB
+PostgreSQL, MySql, MongoDB, SQLite, Microsoft SQL Server, Microsoft Access
 
 #### Server and OS management
 
-- Apache
-- Nginx
-- IIS
-- Windows
-- Ubuntu
+Nginx, Linux, containerd, Docker, Apache, IIS, Windows
 
-#### Development tools
+#### Development CI/CD tools
 
-- VS Code
-- Visual Studio .NET
-- Apache NetBeans
-- Notepad++
+VS Code, Visual Studio .NET, Apache NetBeans, Notepad++, Jenkins, Github Actions, Jest, Cypress, Playwright, Karma, Jasmine, NUnit, xUnit
 
 #### Graphics editing tools
 
-- Photoshop
-- InDesign
-- Figma
-- Canva
+Photoshop, InDesign, Figma, Canva

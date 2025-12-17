@@ -49,3 +49,6 @@ Thumbs.db
 help.txt
 src/assets/files/*
 src/assets/blogs/*
+
+# CI/CD scripts
+*.sh

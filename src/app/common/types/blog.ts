@@ -9,4 +9,5 @@ export interface Blog {
     words: string;
     tags: string;
     length: number;
+    image: string;
 }

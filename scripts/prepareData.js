@@ -39,7 +39,7 @@ const blogs = [];
         } else {
           console.log("Processing file ..", file);
           const textContent = fs.readFileSync(fullPath).toString();
-          const lines = textContent.split('\r\n');
+          const lines = textContent.split(/\r?\n/);
           const wordsList = getTotalWords(textContent);
 
           const blog = {
@@ -50,9 +50,10 @@ const blogs = [];
             updated: getAfterSpace(lines[3]),
             tags: getAfterSpace(lines[4]),
             description: getAfterSpace(lines[5]),
+            image: getAfterSpace(lines[6]),
             words: getUniqueWords(wordsList),
             link: "",
-            length: wordsList.length
+            length: wordsList.length,
           };
 
           blogs.push(blog);
@@ -87,7 +88,7 @@ function writeBlogs() {
 function writeRoutes() {
   file = './routes.txt';
   const routes = [];
-  routes.push('/home', '/about', '/projects', '/bloglist');
+  routes.push('/home', '/about', '/projects', '/bloglist', '/contact');
   blogs.forEach(blog => { routes.push('/blog/' + blog.slug) });
   console.log("Writing routes..", file);
   fs.writeFile(file, routes.join('\r\n'), "utf8", () => { });
@@ -100,6 +101,7 @@ function writeSitemap() {
     { url: '/about', changefreq: 'monthly', priority: 0.5 },
     { url: '/projects', changefreq: 'monthly', priority: 0.7 },
     { url: '/bloglist', changefreq: 'weekly', priority: 1 },
+    { url: '/contact', changefreq: 'monthly', priority: 0.5 },
   ];
 
   blogs.forEach(blog => {

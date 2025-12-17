@@ -3,7 +3,8 @@ title: Learning programming on your own
 created: 2024-06-22T23:50:21.817Z
 updated: 2024-06-22T23:50:21.817Z
 tags: programming self-development
-content: Here are my tips for learning programming on your own using open sources on the Internet
+content: Here are my tips for learning programming on your own using open sources on the Internet.
+image: /assets/images/blogs/learn-programming.jpg
 -- META end -->
 
 ## Learning by yourself is doable

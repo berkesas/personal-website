@@ -6,6 +6,7 @@ import { BlogService } from '../services/blog.service';
 import { RouterLink, RouterLinkActive, RouterOutlet, Router } from '@angular/router';
 import { TimeComponent } from '../common/ui/time/time.component';
 import { Title } from '@angular/platform-browser';
+import { BlogCardComponent } from './blog-card.component';
 
 @Component({
   selector: 'app-blog',
@@ -15,6 +16,7 @@ import { Title } from '@angular/platform-browser';
     RouterLink,
     RouterLinkActive,
     RouterOutlet,
+    BlogCardComponent,
     TimeComponent],
   templateUrl: './blog.component.html',
   styleUrl: './blog.component.css',

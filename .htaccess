@@ -1,0 +1,25 @@
+# Prevent directory browsing
+Options -Indexes
+
+# Prevent access to .htaccess and other hidden files
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>
+
+# Disable server signature
+ServerSignature Off
+
+# Protect against clickjacking
+Header always set X-Frame-Options "SAMEORIGIN"
+
+# Enable XSS protection
+Header always set X-XSS-Protection "1; mode=block"
+
+# Prevent MIME type sniffing
+Header always set X-Content-Type-Options "nosniff"
+
+# Enable rewrite engine
+RewriteEngine On
+
+# Redirect root path to index_3d.html
+RewriteRule ^$ index_3d.html [L]

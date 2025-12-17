@@ -4,6 +4,7 @@ created: 2024-06-07T23:50:21.817Z
 updated: 2024-06-22T23:50:21.817Z
 tags: coursera learn software
 content: In this blog, I share several tips to improve your learning, based on my own experience of learning on Coursera
+image: /assets/images/blogs/coursera.png
 -- META end -->
 
 ## How am I using Coursera?
